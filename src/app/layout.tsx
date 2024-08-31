@@ -16,9 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-slate-900">
+    <html lang="en" className="dark bg-slate-900">
       <body className={inter.className}>
-        <Navbar />
+        <div className="relative w-full flex justify-center items-center">
+          <Navbar />
+        </div>
         {children}
       </body>
     </html>
