@@ -11,6 +11,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    image?: string;
   }[];
   className?: string;
 }) => {
@@ -48,7 +49,15 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
+
           <Card>
+            {item.image && (
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-40 object-cover rounded-lg"
+              />
+            )}
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>

@@ -10,6 +10,7 @@ function UpcomingWebinars() {
         "Dive deep into the fundamentals of music theory and enhance your musical skills.",
       slug: "understanding-music-theory",
       isFeatured: true,
+      image: "/courses/classical-music.jpg",
     },
     {
       title: "The Art of Songwriting",
@@ -17,6 +18,7 @@ function UpcomingWebinars() {
         "Learn the craft of songwriting from experienced musicians and songwriters.",
       slug: "the-art-of-songwriting",
       isFeatured: true,
+      image: "/courses/guitar-1.jpg",
     },
     {
       title: "Mastering Your Instrument",
@@ -24,6 +26,7 @@ function UpcomingWebinars() {
         "Advanced techniques to master your musical instrument of choice.",
       slug: "mastering-your-instrument",
       isFeatured: true,
+      image: "/courses/guitar-2.jpg",
     },
     {
       title: "Music Production Essentials",
@@ -31,6 +34,7 @@ function UpcomingWebinars() {
         "Get started with music production with this comprehensive overview.",
       slug: "music-production-essentials",
       isFeatured: true,
+      image: "/courses/guitar-3.jpg",
     },
     // Added two more webinars
     {
@@ -39,6 +43,7 @@ function UpcomingWebinars() {
         "Enhance your live performance skills with expert tips and strategies.",
       slug: "live-performance-techniques",
       isFeatured: true,
+      image: "/courses/guitar-4.jpg",
     },
     {
       title: "Digital Music Marketing",
@@ -46,6 +51,7 @@ function UpcomingWebinars() {
         "Learn how to promote your music effectively in the digital age.",
       slug: "digital-music-marketing",
       isFeatured: true,
+      image: "/courses/guitar-5.jpg",
     },
   ];
 
@@ -64,6 +70,7 @@ function UpcomingWebinars() {
         <div className="mt-10">
           <HoverEffect
             items={featuredWebinars.map((webinar) => ({
+              image: webinar.image,
               title: webinar.title,
               description: webinar.description,
               link: "/",
